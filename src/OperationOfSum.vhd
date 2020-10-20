@@ -3,7 +3,7 @@ USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
 	ENTITY OperationOfSum IS
-		GENERIC ( N : integer:=11);
+		GENERIC ( N : integer:=7); --11bit
 		PORT (Add_first,Add_second: IN signed(N-1 DOWNTO 0);
 				outSum: out signed(N-1 downto 0));
 	END OperationOfSum;
