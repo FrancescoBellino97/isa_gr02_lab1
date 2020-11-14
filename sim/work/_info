@@ -3,13 +3,13 @@ m255
 cModel Technology
 d/home/isa02/Desktop/Lab1/sim
 T_opt
-VF`aA@bkk_0b]YX2ZH4E;Z1
+VGKY^7N0<L38^Mj:PGUR<O0
 06 9 4 ./work testbench fast 0
-o-quiet -auto_acc_if_foreign -work work
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /testbench/UUT=../innovus/IIR_filter_order2.sdf -suppress 1948
 tExplicit 1
 OE;O;6.2g;35
 Eclk_gen
-w1602842676
+w1604845978
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
@@ -35,29 +35,6 @@ OE;C;6.2g;35
 M3 ieee std_logic_1164
 M2 ieee std_logic_arith
 M1 ieee std_logic_unsigned
-o-93 -work ./work
-tExplicit 1
-Econtrolunit
-w1602946058
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../src/controlUnit.vhd
-F../src/controlUnit.vhd
-l0
-L4
-VDBLVhJ4]a7YGc1km0z6[Z3
-OE;C;6.2g;35
-31
-o-93 -work ./work
-tExplicit 1
-Abehavior
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work controlunit DBLVhJ4]a7YGc1km0z6[Z3
-l22
-L16
-VN<IgcIN?Nid20e`fO<K;S2
-OE;C;6.2g;35
-31
-M1 ieee std_logic_1164
 o-93 -work ./work
 tExplicit 1
 Edata_maker
@@ -96,7 +73,7 @@ M1 std textio
 o-93 -work ./work
 tExplicit 1
 Edata_sink
-w1602844475
+w1604845462
 DP std textio K]Z^fghZ6B=BjnK5NomDT3
 DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
@@ -130,162 +107,19 @@ M2 ieee std_logic_textio
 M1 std textio
 o-93 -work ./work
 tExplicit 1
-Edatapath_iir
-w1603030334
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../src/datapath_IIR.vhd
-F../src/datapath_IIR.vhd
-l0
-L5
-V:`AB=<Yk@cIf==CZGGDnG2
-OE;C;6.2g;35
+vIIR_filter_order2
+I3;XP9UWP@6WR993DFPkRG2
+VBTWm^d?^89m;8KIj?SZGF3
+w1604923930
+8../innovus/IIR_filter_order2.v
+F../innovus/IIR_filter_order2.v
+L0 15
+VBTWm^d?^89m;8KIj?SZGF3
+OE;L;6.2g;35
+r1
 31
-o-93 -work ./work
-tExplicit 1
-Astructural
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work datapath_iir :`AB=<Yk@cIf==CZGGDnG2
-l63
-L22
-VJfKOX1P=g2fIoVl_ACY>50
-OE;C;6.2g;35
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
-o-93 -work ./work
-tExplicit 1
-Eiir_filter_order2
-w1603029880
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../src/IIR_filter_order2.vhd
-F../src/IIR_filter_order2.vhd
-l0
-L5
-VE`BmZeYZc0UL8[BEY6jVf0
-OE;C;6.2g;35
-31
-o-93 -work ./work
-tExplicit 1
-Astructural
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work iir_filter_order2 E`BmZeYZc0UL8[BEY6jVf0
-l52
-L18
-Vjc=ARjjgH:CcZIWKA6nU:3
-OE;C;6.2g;35
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
-o-93 -work ./work
-tExplicit 1
-Eoperationofmultiplier
-w1603139493
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../src/OperationOfMultiplier.vhd
-F../src/OperationOfMultiplier.vhd
-l0
-L5
-VYZa0U[[8KgH:f>CR@nL931
-OE;C;6.2g;35
-31
-o-93 -work ./work
-tExplicit 1
-Abehavior
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work operationofmultiplier YZa0U[[8KgH:f>CR@nL931
-l15
-L11
-V1gQ<Ta5hNJn59aUDzkij42
-OE;C;6.2g;35
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
-o-93 -work ./work
-tExplicit 1
-Eoperationofsum
-w1603028543
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../src/OperationOfSum.vhd
-F../src/OperationOfSum.vhd
-l0
-L5
-VSh^Bb:]m^z>TZaPL<:hA23
-OE;C;6.2g;35
-31
-o-93 -work ./work
-tExplicit 1
-Abehavior
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work operationofsum Sh^Bb:]m^z>TZaPL<:hA23
-l13
-L11
-V4CbNZU`em>o@d4BIo2g`U0
-OE;C;6.2g;35
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
-o-93 -work ./work
-tExplicit 1
-Eregin_out
-w1603028898
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../src/regIn_out.vhd
-F../src/regIn_out.vhd
-l0
-L5
-VFe29Yio2SB8;aU8o9_E363
-OE;C;6.2g;35
-31
-o-93 -work ./work
-tExplicit 1
-Abehavior
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work regin_out Fe29Yio2SB8;aU8o9_E363
-l14
-L12
-V[KSda2hL@Wb6KOVeBUFU92
-OE;C;6.2g;35
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
-o-93 -work ./work
-tExplicit 1
-Eregister_data
-w1603028591
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../src/register_data.vhd
-F../src/register_data.vhd
-l0
-L6
-ViVLXO16JIa@bd@9EIUN861
-OE;C;6.2g;35
-31
-o-93 -work ./work
-tExplicit 1
-Abehavior
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work register_data iVLXO16JIa@bd@9EIUN861
-l15
-L13
-V?m;Al5i=Zb@;H28_HCODg0
-OE;C;6.2g;35
-31
-M2 ieee std_logic_1164
-M1 ieee numeric_std
-o-93 -work ./work
-tExplicit 1
+o-work ./work
+n@i@i@r_filter_order2
 vtestbench
 I2cJ_j?7Qe9UgDY<5nR^Co1
 VhGfW:390DM[oDMzegDH9`2

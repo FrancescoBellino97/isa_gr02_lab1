@@ -4,7 +4,7 @@ USE ieee.std_logic_1164.all;
 USE ieee.numeric_std.all;
 
 	ENTITY register_data IS
-		GENERIC ( N : integer:=7); --11bit
+		GENERIC ( N : integer:=6);
 		PORT ( Clock,Load,Reset: IN STD_LOGIC;
 				 datoInput: in signed(N-1 downto 0);
 				 datoOutput : OUT signed(N-1 DOWNTO 0));

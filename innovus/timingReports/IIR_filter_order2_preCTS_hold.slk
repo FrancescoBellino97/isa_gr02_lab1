@@ -1,0 +1,26 @@
+# Format: clock  timeReq  slackR/slackF  holdR/holdF  instName/pinName   # cycle(s)
+MY_CLK(R)->MY_CLK(R)	0.072    */0.003         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_4_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.003         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_3_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.003         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.003         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_10_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.004         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_9_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.004         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_7_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.004         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_8_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.004         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_5_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.004         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_6_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.004         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.005         */-0.002        Execution_unit_LoadedOutput_datoOutput_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.077    0.038/*         -0.007/*        CU_STATE_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.051         */-0.002        Execution_unit_SW_1_datoOutput_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.082    0.052/*         -0.012/*        CU_STATE_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.061         */-0.002        Execution_unit_SW_0_datoOutput_reg_0_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.065         */-0.002        Execution_unit_SW_1_datoOutput_reg_4_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.065         */-0.002        Execution_unit_SW_1_datoOutput_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.075         */-0.002        Execution_unit_SW_0_datoOutput_reg_4_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.075         */-0.002        Execution_unit_SW_0_datoOutput_reg_2_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.082         */-0.002        Execution_unit_SW_1_datoOutput_reg_5_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.082         */-0.002        Execution_unit_SW_1_datoOutput_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.089         */-0.002        Execution_unit_SW_1_datoOutput_reg_3_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.093         */-0.002        Execution_unit_SW_0_datoOutput_reg_1_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.098         */-0.002        Execution_unit_SW_0_datoOutput_reg_3_/D    1
+MY_CLK(R)->MY_CLK(R)	0.072    */0.099         */-0.002        Execution_unit_SW_0_datoOutput_reg_5_/D    1

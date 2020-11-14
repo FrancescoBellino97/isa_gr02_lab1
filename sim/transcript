@@ -8,9 +8,31 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim work.testbench 
+# vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /testbench/UUT=../innovus/IIR_filter_order2.sdf work.testbench 
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.testbench(fast)
+# Loading work.IIR_filter_order2(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XNOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.DFFR_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.DFF_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.FA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.MUX2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.HA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR3_X1(fast)
+# Loading instances from ../innovus/IIR_filter_order2.sdf
 # Loading /software/mentor/modelsim_6.2g/linux/../std.standard
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
@@ -19,16 +41,44 @@
 # Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
 # Loading work.data_maker(beh)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
-# Loading work.iir_filter_order2(structural)#1
-# Loading work.controlunit(behavior)
-# Loading work.datapath_iir(structural)#1
-# Loading work.regin_out(behavior)#1
-# Loading work.operationofsum(behavior)#1
-# Loading work.operationofmultiplier(behavior)#1
-# Loading work.register_data(behavior)#1
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(669): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testbench/UUT/CU_STATE_reg_1_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(673): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testbench/UUT/CU_STATE_reg_0_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(747): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testbench/UUT/Execution_unit_FirstSUM_fb_add_15_U1_5
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(777): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testbench/UUT/Execution_unit_SecondSUM_fb_add_15_U1_5
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1284): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_0_datoOutput_reg_0_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1287): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_0_datoOutput_reg_1_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1290): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_0_datoOutput_reg_2_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1293): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_0_datoOutput_reg_3_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1296): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_0_datoOutput_reg_4_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1299): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_0_datoOutput_reg_5_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1350): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_1_datoOutput_reg_0_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1353): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_1_datoOutput_reg_1_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1356): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_1_datoOutput_reg_2_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1359): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_1_datoOutput_reg_3_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1362): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_1_datoOutput_reg_4_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1365): [TFMPC] - Too few port connections. Expected 4, found 3.
+#         Region: /testbench/UUT/Execution_unit_SW_1_datoOutput_reg_5_
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1395): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testbench/UUT/Execution_unit_FirstSUM_ff_add_15_U1_5
+# ** Warning: (vsim-3017) ../innovus/IIR_filter_order2.v(1425): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testbench/UUT/Execution_unit_SecondSUM_ff_add_15_U1_5
 # Loading work.data_sink(beh)
-add wave *
-add wave *
-add wave *
-run 2080 ns
+# Loading timing data from ../innovus/IIR_filter_order2.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Region: /testbench  File: ../tb/testbench.v
+source scripts/Esw_estimation_innovus.tcl

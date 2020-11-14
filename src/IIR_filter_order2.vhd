@@ -23,8 +23,8 @@ USE ieee.numeric_std.all;
 	
 	--component declaration
 		Component datapath_IIR is
-			GENERIC ( N : integer:=11;
-				  N_intern: integer:= 7);
+		GENERIC ( N : integer:=11;
+					 N_internal: integer :=6);
 			port(
 				Clk: in std_logic;
 				DIN: in signed(N-1 downto 0);

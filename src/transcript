@@ -1,0 +1,89 @@
+# //  ModelSim SE 6.2g Feb 21 2007 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+vcom -reportprogress 300 -work work /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# ** Error: (vcom-19) Failed to access library 'work' at "./work".
+# No such file or directory. (errno = ENOENT)
+vlib work
+vcom -reportprogress 300 -work work /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath_iir
+# -- Compiling architecture structural of datapath_iir
+vsim work.datapath_iir
+# vsim work.datapath_iir 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: [1] (vopt-3473) Component instance "reduced_a1 : shiftright" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "reduced_a2 : shiftright" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "reduced_b0 : shiftright" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "reduced_b1 : shiftright" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "reduced_b2 : shiftright" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "loadedinput : regin_out" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "input_reduced : shiftright" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "firstsum_fb : operationofsum" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "secondsum_fb : operationofsum" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "firstmultiplier_fb : operationofmultiplier" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "secondmultiplier_fb : operationofmultiplier" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "sw_0 : register_data" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "sw_1 : register_data" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "firstsum_ff : operationofsum" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "secondsum_ff : operationofsum" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "firstmultiplier_ff : operationofmultiplier" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "secondmultiplier_ff : operationofmultiplier" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "thirdmultiplier_ff : operationofmultiplier" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "output_extended : shiftleft" is not bound.
+# ** Warning: [1] (vopt-3473) Component instance "loadedoutput : regin_out" is not bound.
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading work.datapath_iir(structural)#1
+# ** Warning: (vsim-3473) Component instance "reduced_a1 : shiftright" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "reduced_a2 : shiftright" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "reduced_b0 : shiftright" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "reduced_b1 : shiftright" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "reduced_b2 : shiftright" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "loadedinput : regin_out" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "input_reduced : shiftright" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "firstsum_fb : operationofsum" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "secondsum_fb : operationofsum" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "firstmultiplier_fb : operationofmultiplier" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "secondmultiplier_fb : operationofmultiplier" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "sw_0 : register_data" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "sw_1 : register_data" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "firstsum_ff : operationofsum" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "secondsum_ff : operationofsum" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "firstmultiplier_ff : operationofmultiplier" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "secondmultiplier_ff : operationofmultiplier" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "thirdmultiplier_ff : operationofmultiplier" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "output_extended : shiftleft" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd
+# ** Warning: (vsim-3473) Component instance "loadedoutput : regin_out" is not bound.
+#    Time: 0 ns  Iteration: 0  Region: /datapath_iir  File: /home/isa02/Desktop/Lab1/src/datapath_IIR.vhd

@@ -1,0 +1,31 @@
+
+Power Report Interval
+2200
+
+Power Report                        Node     Tc     Ti    Time At 1    Time At 0    Time At X
+---------------------------------------------------------------------------------------------
+                        /testbench/CLK_i    428      0         1066         1134            0
+                      /testbench/RST_n_i      1      0         2185           15            0
+                    /testbench/DIN_i(10)     93      0         1134         1065            1
+                     /testbench/DIN_i(9)    101      0         1134         1065            1
+                     /testbench/DIN_i(8)    107      0         1134         1065            1
+                     /testbench/DIN_i(7)     95      0         1134         1065            1
+                     /testbench/DIN_i(6)     95      0         1134         1065            1
+                     /testbench/DIN_i(5)    107      0         1134         1065            1
+                     /testbench/DIN_i(4)    107      0         1134         1065            1
+                     /testbench/DIN_i(3)    107      0         1134         1065            1
+                     /testbench/DIN_i(2)    107      0         1134         1065            1
+                     /testbench/DIN_i(1)     95      0         1134         1065            1
+                     /testbench/DIN_i(0)     95      0         1134         1065            1
+                        /testbench/VIN_i      2      0         2010          189            1
+                   /testbench/DOUT_i(10)     19      0         1225          920           55
+                    /testbench/DOUT_i(9)     33      0         1155          990           55
+                    /testbench/DOUT_i(8)     73      0         1185          960           55
+                    /testbench/DOUT_i(7)    135      0         1025         1120           55
+                    /testbench/DOUT_i(6)    112      0         1140         1005           55
+                    /testbench/DOUT_i(5)    122      0         1060         1085           55
+                    /testbench/DOUT_i(4)     78      0         1040         1105           55
+                       /testbench/VOUT_i      2      0         2010          190            0
+                    /testbench/END_SIM_i      1      0           64         2135            1
+---------------------------------------------------------------------------------------------
+

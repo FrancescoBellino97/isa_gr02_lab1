@@ -1,0 +1,75 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'IIR_filter_order2'.
+Information: Building the design 'controlUnit'. (HDL-193)
+
+Statistics for case statements in always block at line 29 in file
+	'../src/controlUnit.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 58 in file
+	'../src/controlUnit.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            69            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine controlUnit line 29 in file
+		'../src/controlUnit.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      STATE_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'datapath_IIR' instantiated from design 'IIR_filter_order2' with
+	the parameters "N=11,N_internal=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'shiftRight' instantiated from design 'datapath_IIR_N11_N_internal6' with
+	the parameters "N=11,N_internal=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'regIn_out' instantiated from design 'datapath_IIR_N11_N_internal6' with
+	the parameters "N=11". (HDL-193)
+
+Inferred memory devices in process
+	in routine regIn_out_N11 line 16 in file
+		'../src/regIn_out.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   datoOutput_reg    | Flip-flop |  11   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'OperationOfSum' instantiated from design 'datapath_IIR_N11_N_internal6' with
+	the parameters "N=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'OperationOfMultiplier' instantiated from design 'datapath_IIR_N11_N_internal6' with
+	the parameters "N=6". (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'register_data' instantiated from design 'datapath_IIR_N11_N_internal6' with
+	the parameters "N=6". (HDL-193)
+
+Inferred memory devices in process
+	in routine register_data_N6 line 17 in file
+		'../src/register_data.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   datoOutput_reg    | Flip-flop |   6   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'shiftLeft' instantiated from design 'datapath_IIR_N11_N_internal6' with
+	the parameters "N=11,N_internal=6". (HDL-193)
+Presto compilation completed successfully.
+1

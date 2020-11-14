@@ -1,0 +1,158 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_filter_order2
+Version: O-2018.06-SP4
+Date   : Mon Nov  9 11:17:15 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Execution_unit/SW_0/datoOutput_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: Execution_unit/LoadedOutput/datoOutput_reg[10]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_filter_order2  5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Execution_unit/SW_0/datoOutput_reg[1]/CK (DFF_X1)       0.00       0.00 r
+  Execution_unit/SW_0/datoOutput_reg[1]/Q (DFF_X1)        0.14       0.14 r
+  Execution_unit/SW_0/datoOutput[1] (register_data_N6_1)
+                                                          0.00       0.14 r
+  Execution_unit/FirstMultiplier_fb/M_second[1] (OperationOfMultiplier_N6_4)
+                                                          0.00       0.14 r
+  Execution_unit/FirstMultiplier_fb/mult_17/b[1] (OperationOfMultiplier_N6_4_DW_mult_tc_0)
+                                                          0.00       0.14 r
+  Execution_unit/FirstMultiplier_fb/mult_17/U109/ZN (INV_X1)
+                                                          0.04       0.19 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U138/Z (XOR2_X1)
+                                                          0.06       0.25 r
+  Execution_unit/FirstMultiplier_fb/mult_17/U135/ZN (OAI22_X1)
+                                                          0.04       0.30 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U22/S (HA_X1)
+                                                          0.07       0.37 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U111/ZN (INV_X1)
+                                                          0.03       0.40 r
+  Execution_unit/FirstMultiplier_fb/mult_17/U119/ZN (OAI222_X1)
+                                                          0.06       0.46 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U118/ZN (AOI222_X1)
+                                                          0.10       0.56 r
+  Execution_unit/FirstMultiplier_fb/mult_17/U103/ZN (INV_X1)
+                                                          0.03       0.58 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U7/CO (FA_X1)
+                                                          0.09       0.67 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U6/CO (FA_X1)
+                                                          0.09       0.76 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U5/CO (FA_X1)
+                                                          0.09       0.85 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U4/CO (FA_X1)
+                                                          0.09       0.94 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U3/CO (FA_X1)
+                                                          0.09       1.03 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U116/Z (XOR2_X1)
+                                                          0.07       1.10 f
+  Execution_unit/FirstMultiplier_fb/mult_17/U115/ZN (XNOR2_X1)
+                                                          0.06       1.16 f
+  Execution_unit/FirstMultiplier_fb/mult_17/product[10] (OperationOfMultiplier_N6_4_DW_mult_tc_0)
+                                                          0.00       1.16 f
+  Execution_unit/FirstMultiplier_fb/outM[5] (OperationOfMultiplier_N6_4)
+                                                          0.00       1.16 f
+  Execution_unit/SecondSUM_fb/Add_first[5] (OperationOfSum_N6_2)
+                                                          0.00       1.16 f
+  Execution_unit/SecondSUM_fb/add_15/A[5] (OperationOfSum_N6_2_DW01_add_0)
+                                                          0.00       1.16 f
+  Execution_unit/SecondSUM_fb/add_15/U1_5/S (FA_X1)       0.13       1.30 f
+  Execution_unit/SecondSUM_fb/add_15/SUM[5] (OperationOfSum_N6_2_DW01_add_0)
+                                                          0.00       1.30 f
+  Execution_unit/SecondSUM_fb/outSum[5] (OperationOfSum_N6_2)
+                                                          0.00       1.30 f
+  Execution_unit/FirstSUM_fb/Add_second[5] (OperationOfSum_N6_3)
+                                                          0.00       1.30 f
+  Execution_unit/FirstSUM_fb/add_15/B[5] (OperationOfSum_N6_3_DW01_add_0)
+                                                          0.00       1.30 f
+  Execution_unit/FirstSUM_fb/add_15/U1_5/S (FA_X1)        0.18       1.48 r
+  Execution_unit/FirstSUM_fb/add_15/SUM[5] (OperationOfSum_N6_3_DW01_add_0)
+                                                          0.00       1.48 r
+  Execution_unit/FirstSUM_fb/outSum[5] (OperationOfSum_N6_3)
+                                                          0.00       1.48 r
+  Execution_unit/FirstMultiplier_ff/M_first[5] (OperationOfMultiplier_N6_2)
+                                                          0.00       1.48 r
+  Execution_unit/FirstMultiplier_ff/mult_17/a[5] (OperationOfMultiplier_N6_2_DW_mult_tc_0)
+                                                          0.00       1.48 r
+  Execution_unit/FirstMultiplier_ff/mult_17/U166/Z (XOR2_X1)
+                                                          0.08       1.56 r
+  Execution_unit/FirstMultiplier_ff/mult_17/U165/ZN (NAND2_X1)
+                                                          0.05       1.61 f
+  Execution_unit/FirstMultiplier_ff/mult_17/U143/ZN (OAI22_X1)
+                                                          0.07       1.68 r
+  Execution_unit/FirstMultiplier_ff/mult_17/U20/S (HA_X1)
+                                                          0.08       1.76 r
+  Execution_unit/FirstMultiplier_ff/mult_17/U19/S (FA_X1)
+                                                          0.12       1.88 f
+  Execution_unit/FirstMultiplier_ff/mult_17/U7/CO (FA_X1)
+                                                          0.10       1.98 f
+  Execution_unit/FirstMultiplier_ff/mult_17/U6/CO (FA_X1)
+                                                          0.09       2.07 f
+  Execution_unit/FirstMultiplier_ff/mult_17/U5/CO (FA_X1)
+                                                          0.09       2.16 f
+  Execution_unit/FirstMultiplier_ff/mult_17/U4/CO (FA_X1)
+                                                          0.09       2.26 f
+  Execution_unit/FirstMultiplier_ff/mult_17/U3/CO (FA_X1)
+                                                          0.09       2.34 f
+  Execution_unit/FirstMultiplier_ff/mult_17/U116/Z (XOR2_X1)
+                                                          0.07       2.41 f
+  Execution_unit/FirstMultiplier_ff/mult_17/U115/ZN (XNOR2_X1)
+                                                          0.06       2.48 f
+  Execution_unit/FirstMultiplier_ff/mult_17/product[10] (OperationOfMultiplier_N6_2_DW_mult_tc_0)
+                                                          0.00       2.48 f
+  Execution_unit/FirstMultiplier_ff/outM[5] (OperationOfMultiplier_N6_2)
+                                                          0.00       2.48 f
+  Execution_unit/FirstSUM_ff/Add_first[5] (OperationOfSum_N6_1)
+                                                          0.00       2.48 f
+  Execution_unit/FirstSUM_ff/add_15/A[5] (OperationOfSum_N6_1_DW01_add_0)
+                                                          0.00       2.48 f
+  Execution_unit/FirstSUM_ff/add_15/U1_5/S (FA_X1)        0.14       2.62 r
+  Execution_unit/FirstSUM_ff/add_15/SUM[5] (OperationOfSum_N6_1_DW01_add_0)
+                                                          0.00       2.62 r
+  Execution_unit/FirstSUM_ff/outSum[5] (OperationOfSum_N6_1)
+                                                          0.00       2.62 r
+  Execution_unit/Output_extended/d_in[5] (shiftLeft_N11_N_internal6)
+                                                          0.00       2.62 r
+  Execution_unit/Output_extended/out_extended[10] (shiftLeft_N11_N_internal6)
+                                                          0.00       2.62 r
+  Execution_unit/LoadedOutput/datoInput[10] (regIn_out_N11_0)
+                                                          0.00       2.62 r
+  Execution_unit/LoadedOutput/U11/ZN (NAND2_X1)           0.03       2.64 f
+  Execution_unit/LoadedOutput/U10/ZN (OAI21_X1)           0.03       2.67 r
+  Execution_unit/LoadedOutput/datoOutput_reg[10]/D (DFF_X1)
+                                                          0.01       2.68 r
+  data arrival time                                                  2.68
+
+  clock MY_CLK (rise edge)                               11.20      11.20
+  clock network delay (ideal)                             0.00      11.20
+  clock uncertainty                                      -0.07      11.13
+  Execution_unit/LoadedOutput/datoOutput_reg[10]/CK (DFF_X1)
+                                                          0.00      11.13 r
+  library setup time                                     -0.03      11.10
+  data required time                                                11.10
+  --------------------------------------------------------------------------
+  data required time                                                11.10
+  data arrival time                                                 -2.68
+  --------------------------------------------------------------------------
+  slack (MET)                                                        8.41
+
+
+1

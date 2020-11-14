@@ -15,72 +15,87 @@ USE ieee.std_logic_1164.all;
 	
 	Architecture Behavior of controlUnit is
 	
-		TYPE S_TYPE IS (Idle,ComputeSamples,OutputValidLast,OutputValid);
-		SIGNAL STATE : S_TYPE;
+		-- state and signal declaration of new type TYPE_STATE
+
+		TYPE S_TYPE IS (Idle,FirstSample,OutputValid,OutputValidLast);
+		ATTRIBUTE enum_encoding : string;
+		ATTRIBUTE enum_encoding of S_TYPE: TYPE is "00 01 10 11";
+		signal STATE: S_TYPE;
 						
 		
 		Begin 
-		
+		-- process for current state update
+
 		STATE_PROCESS : PROCESS (Reset_Asy_n,CLK)
 			BEGIN
 			IF (Reset_Asy_n='0') THEN
-						STATE <= Idle;
+				STATE <= Idle;
 						
 			ELSIF (CLK'EVENT AND CLK = '1') THEN
-			
-				 CASE STATE IS
+	
+			  CASE STATE IS
 				 
 				 WHEN Idle =>  IF (V_in = '1') THEN 
-								     STATE <= ComputeSamples;
-									ELSE 
-									  STATE <= Idle;
-									END IF;	
+						  STATE <= FirstSample;
+					       ELSIF (V_in = '0') THEN
+						  STATE <= Idle;
+					       END IF;	
 								
-				 WHEN ComputeSamples =>  IF (V_in = '1') THEN 
-								     STATE <= OutputValid;
-									ELSE 
-									  STATE <= OutputValidLast;
-									END IF;
-									
-				 WHEN OutputValidLast => STATE <= Idle;
-					
+				 WHEN FirstSample =>  STATE <= OutputValid;
 									
 				 WHEN OutputValid =>  IF (V_in = '1') THEN 
-								     STATE <= ComputeSamples;
-									ELSE 
-									  STATE <= Idle;
-									END IF;	
+						 	 STATE <= OutputValid;
+						      ELSIF (V_in = '0') THEN 
+							 STATE <= OutputValidLast;
+						      END IF;
+				
+                                 WHEN OutputValidLast =>  STATE <= Idle;
 									
-				END CASE;
-			END IF;
+			  END CASE;
+                       END IF;
 		END PROCESS STATE_PROCESS;
 	
-		OUTPUT_PROCESS : PROCESS (STATE)
-			BEGIN
+		P_OUTPUTS: PROCESS (STATE)
+		   BEGIN
+			-- assignment by default	
+			VOUT <= '0';
+			Res_sw0 <= '0';
+			Res_sw1<= '0';
+			Load_input<= '1';		
+			Load_sw0<= '0';
+			Load_sw1 <= '0';
+			Load_output <= '0';
      
 			CASE STATE IS
-	        WHEN Idle => Res_sw0 <= '1';
-								Res_sw1<= '1';
-								Load_input<= '1';		
-								Load_sw0<= '0';
-								Load_sw1 <= '0';
-								Load_output <= '0';
-								VOUT <= '0';
-								
- 	         WHEN ComputeSamples => Res_sw0 <= '0';
-											  Res_sw1<= '0';
-											  Load_sw0<= '1';
-											  Load_sw1<= '1';
-											  Load_output <= '1';
-											  
-				WHEN OutputValidLast =>    VOUT <= '1';
-											  --Load_output <= '0';							  
- 	         WHEN OutputValid => 	  
-											  VOUT <= '1';
-											  --Load_output <= '0';
+
+	        		WHEN Idle => Res_sw0 <= '1';
+					     Res_sw1<= '1';
+					     --Load_input<= '1';		
+					     --Load_sw0<= '0';
+                        		     --Load_sw1 <= '0';
+                                             --Load_output <= '0';
+					     --VOUT<='0';
+		
+ 	         		WHEN FirstSample =>-- Res_sw0 <= '0';
+						   -- Res_sw1<= '0';
+						    Load_sw0<= '1';
+						    Load_sw1<= '1';
+						    Load_output <= '1';
+						   -- VOUT <= '0';
+							  
+ 	         		WHEN OutputValid =>    VOUT <= '1';
+						       Load_sw0<= '1';
+						       Load_sw1<= '1';
+						       Load_output <= '1';
+
+                                WHEN OutputValidLast =>VOUT <= '1';
+                                                       Load_sw0<= '1';
+                                                       Load_sw1<= '1';
+                                                       Load_output <= '1';
+
 			END CASE;
-		END PROCESS OUTPUT_PROCESS;
+		END PROCESS P_OUTPUTS;
 				
-	End Behavior;	
+	End behavior;	
 		
 		
